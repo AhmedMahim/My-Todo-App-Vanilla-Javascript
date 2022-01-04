@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mahim | TODO App | Vanilla Javascript</title>
+    <!-- Google Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo1">TODO</span>
+            <span class="logo2">AHMED MAHIM</span>
+        </div>
+    </header>
+
+    <main>
+        <p id="msg">Welcome!</p>
+        <section class="inputbx">
+            <i class="fas fa-pen"></i>
+            <input type="text" id="todoInput" placeholder="Create a Todo">
+            <button id="submitBtn" aria-keyshortcuts="enter">Create</button>
+        </section>
+
+        <section class="container">
+            <ul id="todoCont">
+                <!-- 
+                    All the todos will be displayed 
+                    here wiht Javascript
+                 -->
+            </ul>
+
+            <footer>
+                <section>
+                    <button id="clearbtn">Clear</button>
+                    <button class="helpBtn">?</button>
+                    <div class="help-box">
+                        <h2>1. Add Todos</h2>
+                        <p>Write something to the Input box an click to the 'Create todo box' to add todo.
+                        </p>
+                        <h2>2. Mark a Todo as finished</h2>
+                        <p>Single click the todo to mark it as finished.</p>
+                        <h2>3. Remove a Todo</h2>
+                        <p>Double click the Todo to remove it.</p>
+                    </div>
+                </section>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
